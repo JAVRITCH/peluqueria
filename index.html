@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peluquería Andy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar">
+
+            <a href="#inicio">INICIO</a>
+            <a href="#horarios">HORARIOS</a>
+            <a href="#ubicacion">UBICACIÓN</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#productos">PRODUCTOS</a>
+            <a href="#reserva">RESERVA</a>
+            <a href="#contacto">CONTACTO</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="inicio">
+
+        <img src="img/portada.jpeg" alt="Portada" class="hero-logo">
+
+        <p>
+            OFRECEMOS LOS MEJORES CORTES Y SERVICIOS DE PELUQUERÍA EN EL BARRIO
+        </p>
+
+    </section>
+
+    <!-- ================= HORARIOS ================= -->
+
+    <section class="horarios" id="horarios">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>HORARIOS</h2>
+
+        <table>
+
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>08:00 AM - 19:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Sábado</td>
+                <td>08:00 AM - 19:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Domingo</td>
+                <td>08:00 AM - 13:00 PM</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- ================= UBICACION ================= -->
+
+    <section class="direccion" id="ubicacion">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>UBICACIÓN</h2>
+
+        <div class="direccion-box">
+
+            <p>
+                Calle Principal C. Fernando Sánchez de Orellana - Ecuador
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1778627503249!6m8!1m7!1s2zX_W55skN7VQdT_kFl9uw!2m2!1d-0.93218222648728!2d-78.61497698416568!3f49.334945697345916!4f-7.7456782848666705!5f0.7820865974627469"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+
+    <section class="servicios" id="servicios">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>SERVICIOS DE PELUQUERÍA</h2>
+        
+
+        <div class="contenedor-servicios">
+
+            <div class="servicio-card">
+
+                <img src="img/degradado.jpg" alt="Servicio 1">
+
+                <h3>Degradados</h3>
+
+                <p>
+                    Corte moderno y de alta precisión
+                </p>
+
+            </div>
+
+            <div class="servicio-card">
+
+                <img src="img/clasico.jpg" alt="Servicio 2">
+
+                <h3>Clásico</h3>
+
+                <p>
+                    Corte clásico y elegante
+                </p>
+
+            </div>
+
+            <div class="servicio-card">
+
+                <img src="img/tinte.jpeg" alt="Servicio 3">
+
+                <h3>Tinte y Diseño</h3>
+
+                <p>
+                    Cambio de look y diseños personalizados
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section class="productos" id="productos">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>PRODUCTOS</h2>
+
+        <div class="contenedor-productos">
+
+            <div class="producto-card">
+
+                <img src="img/cera.png" alt="Producto 1">
+
+                <h3>Cera para Cabello</h3>
+
+                <p>
+                    Fijación profesional para cualquier estilo
+                </p>
+
+            </div>
+
+            <div class="producto-card">
+
+                <img src="img/shapoo.png" alt="Producto 2">
+
+                <h3>Shampoo Premium</h3>
+
+                <p>
+                    Limpieza profunda y cuidado capilar
+                </p>
+
+            </div>
+
+            <div class="producto-card">
+
+                <img src="img/aceite.png" alt="Producto 3">
+
+                <h3>Aceite para Barba</h3>
+
+                <p>
+                    Hidratación y brillo para tu barba
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= VIDEO ================= -->
+
+    <section class="video-section">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>NUESTRO TRABAJO</h2>
+
+        <div class="video-container">
+
+            <video controls>
+
+                <source src="vid/video_peluqueria.mp4" type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RESERVAS ================= -->
+
+    <section class="reservas" id="reserva">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>RESERVA TU CITA</h2>
+
+        <form action="guardar.php" method="POST" class="formulario">
+
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+            <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+
+            <button type="submit">RESERVAR</button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= CONTACTOS ================= -->
+
+    <section class="contactos" id="contacto">
+
+        <div class="linea-decorativa"></div>
+
+        <h2>CONTACTOS</h2>
+
+        <div class="redes">
+
+            <a href="https://www.facebook.com/profile.php?id=100057338384279">
+
+                <img src="img/facebook.png" alt="Facebook">
+
+                Facebook
+                <h4>@PeluqueríaAndy</h4>
+
+            </a>
+
+            <a href="#">
+
+                <img src="img/whatsapp.png" alt="WhatsApp">
+
+                WhatsApp
+                <h4>0992699409</h4>
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
