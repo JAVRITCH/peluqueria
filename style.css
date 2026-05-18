@@ -87,7 +87,9 @@ body{
 }
 
 .hero-logo{
-    width: 1200px;
+    width: 1300px;
+
+    max-width: 100%;
 }
 
 .hero p{
@@ -512,4 +514,101 @@ td{
 
 .redes img{
     width: 35px;
+}
+
+/* ================= MENU HAMBURGUESA ================= */
+
+#menu-checkbox{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: black;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 768px){
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        margin-top: 20px;
+
+        gap: 10px;
+    }
+
+    .navbar a{
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #menu-checkbox:checked ~ .navbar{
+        display: flex;
+    }
+
+    .hero-logo{
+        width: 95%;
+    }
+
+    .hero p{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .direccion-box{
+        width: 95%;
+    }
+
+    .contenedor-servicios,
+    .contenedor-productos,
+    .redes{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .servicio-card,
+    .producto-card{
+        width: 90%;
+    }
+
+    .video-container{
+        width: 95%;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+    table{
+        width: 95%;
+    }
+
+    th,
+    td{
+        font-size: 16px;
+        padding: 10px;
+    }
+
 }
